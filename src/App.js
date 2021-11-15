@@ -10,7 +10,7 @@ function App() {
   );
 
   const handleFailure = (result) => {
-    alert(result);
+    console(result);
   };
 
   const handleLogin = async (googleData) => {

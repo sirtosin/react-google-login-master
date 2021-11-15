@@ -31,6 +31,7 @@ function App() {
   };
   const handleLogout = () => {
     localStorage.removeItem('loginData');
+
     setLoginData(null);
   };
 

@@ -2,7 +2,6 @@ import "./App.css";
 import GoogleLogin from "react-google-login";
 import FacebookLogin from "react-facebook-login";
 import { useState } from "react";
-
 function App() {
   const [loginData, setLoginData] = useState(
     localStorage.getItem("loginData")
@@ -99,7 +98,7 @@ function App() {
             </div>
           ) : (
             <FacebookLogin
-              appId="4200549956720294"
+              appId={process.env.FB_ID}
               autoLoad={true}
               fields="name,email,picture"
               onClick={componentClicked}
